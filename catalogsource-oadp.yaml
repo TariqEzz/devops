@@ -1,0 +1,11 @@
+# catalogsource-oadp.yaml
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: redhat-operators-mirror
+  namespace: openshift-marketplace
+spec:
+  sourceType: grpc
+  image: registry.intra.local:5000/redhat/redhat-operator-index:v4.14
+  displayName: "Red Hat Operators (Mirror)"
+  publisher: "Local Mirror"
